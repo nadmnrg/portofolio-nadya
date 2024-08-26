@@ -1,0 +1,131 @@
+*,
+html {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 100%;
+}
+
+.container-navbar {
+    background-color: #e7e7e7;
+    width: 100%;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Menyebar logo dan menu navigasi */
+    padding: 0 20px; /* Jarak dari tepi */
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+.navbar-logo {
+    display: flex;
+    flex-direction: column; /* Mengatur logo dan teks dalam kolom */
+    align-items: center; /* Mengatur logo dan teks agar berada di tengah */
+}
+
+.logo-img {
+    height: 60px; /* Sesuaikan dengan ukuran logo yang diinginkan */
+    width: auto; /* Agar proporsi logo tetap terjaga */
+    margin-bottom: 5px; /* Jarak antara logo dan teks */
+}
+
+.logo-text {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.ul-navbar {
+    display: flex;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    align-items: center;
+}
+
+.li-navbar {
+    padding: 20px;
+}
+
+.li-navbar a {
+    text-decoration: none;
+    color: #333;
+    font-size: 16px;
+}
+
+.content-header {
+    margin-top: 100px; /* Untuk memberi ruang di bawah navbar */
+}
+
+.gambar-nad {
+    width: 100%;
+    height: auto;
+    display: block;
+    opacity: 0.8;
+}
+
+.overlay-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: center;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.5); /* Background semi-transparan */
+}
+
+.overlay-text h2 {
+    font-size: 24px;
+    margin: 0;
+}
+
+.portfolio-link {
+    display: inline-block;
+    margin-top: 10px;
+    text-decoration: none;
+    color: #fff;
+    background-color: #333;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.section {
+    padding: 60px 20px;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+.section h2 {
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.section p {
+    font-size: 17px;
+    line-height: 1.6;
+}
+
+.container-footer {
+    background-color: #f1f1f1;
+    padding: 20px;
+    text-align: center;
+}
+
+.h1-footer {
+    font-size: 14px;
+    font-family: 'Poppins', sans-serif;
+    color: #888ea5;
+    margin: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
