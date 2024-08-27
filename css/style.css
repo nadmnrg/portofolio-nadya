@@ -51,6 +51,12 @@ html {
 
 .li-navbar {
     padding: 20px;
+    transition: background-color 0.3s ease;
+    
+}
+
+.li-navbar a:hover {
+    color: #ff8800; /* Warna biru langit saat hover */
 }
 
 .li-navbar a {
@@ -60,6 +66,7 @@ html {
 }
 
 .content-header {
+    position: relative; /* Tambahkan posisi relatif untuk kontainer */
     margin-top: 100px; /* Untuk memberi ruang di bawah navbar */
 }
 
@@ -79,22 +86,38 @@ html {
     text-align: center;
     padding: 20px;
     background-color: rgba(0, 0, 0, 0.5); /* Background semi-transparan */
+    border-radius: 10px; /* Tambahkan border-radius untuk sudut yang lebih lembut */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Tambahkan bayangan untuk meningkatkan keterbacaan */
+    width: 30%; /* Atur lebar kotak teks sesuai kebutuhan */
+    height: 22%;
+    max-width: none; /* Pastikan tidak ada batasan lebar maksimum */
+    box-sizing: border-box;
+}
+
+.overlay-text h1 {
+    font-size: 36px; /* Ukuran font yang lebih besar untuk judul utama */
+    margin: 0 0 30px; /* Spasi bawah untuk jarak antara judul dan subjudul */
 }
 
 .overlay-text h2 {
     font-size: 24px;
-    margin: 0;
+    margin: 0 0 40px; /* Spasi bawah untuk jarak antara subjudul dan subjudul selanjutnya */
+}
+
+.overlay-text h3 {
+    font-size: 18px;
+    margin: 0 0 20px; /* Spasi bawah untuk jarak antara subjudul dan tombol */
 }
 
 .portfolio-link {
     display: inline-block;
     margin-top: 10px;
     text-decoration: none;
-    color: #fff;
-    background-color: #333;
+    color: #ffffff;
+    background-color: #ff8800;
     padding: 10px 20px;
     border-radius: 5px;
-    font-size: 16px;
+    font-size: 18px;
 }
 
 .section {
