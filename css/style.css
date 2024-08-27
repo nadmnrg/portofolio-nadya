@@ -89,7 +89,7 @@ html {
     border-radius: 10px; /* Tambahkan border-radius untuk sudut yang lebih lembut */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Tambahkan bayangan untuk meningkatkan keterbacaan */
     width: 30%; /* Atur lebar kotak teks sesuai kebutuhan */
-    height: 22%;
+    height: 25%;
     max-width: none; /* Pastikan tidak ada batasan lebar maksimum */
     box-sizing: border-box;
 }
@@ -108,6 +108,11 @@ html {
     font-size: 18px;
     margin: 0 0 20px; /* Spasi bawah untuk jarak antara subjudul dan tombol */
 }
+
+.punctuation {
+    color: #ff8800; /* Warna yang diinginkan untuk tanda baca */
+}
+
 
 .portfolio-link {
     display: inline-block;
@@ -129,12 +134,247 @@ html {
 .section h2 {
     font-size: 30px;
     margin-bottom: 20px;
+    justify-content: ce;
 }
 
 .section p {
     font-size: 17px;
     line-height: 1.6;
 }
+
+
+/* INI UNTUK EDUCATION */
+/* Section Styling */
+#education {
+    background-color: #f9f9f9; /* Background color for the section */
+    padding: 60px 20px; /* Padding around the section */
+    border-radius: 10px; /* Rounded corners for the section */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Light shadow for depth */
+    margin: 40px auto; /* Center the section with margin */
+    max-width: 1000px; /* Max width for better readability */
+    position: relative; /* Position relative for pseudo-elements */
+}
+
+/* Section Title */
+#education h2 {
+    font-size: 36px; /* Larger font size for the section title */
+    color: #ff8800; /* Highlight color for the section title */
+    text-align: center; /* Center align the title */
+    margin-bottom: 40px; /* Space below the title */
+    position: relative; /* Position relative for pseudo-elements */
+}
+
+/* Optional: Adding a decorative underline */
+#education h2::after {
+    content: "";
+    display: block;
+    width: 80px; /* Width of the underline */
+    height: 4px; /* Thickness of the underline */
+    background-color: #ff8800; /* Color of the underline */
+    margin: 20px auto 0; /* Center the underline and add space above */
+    border-radius: 2px; /* Rounded corners for the underline */
+}
+
+/* Timeline Container */
+.timeline {
+    position: relative;
+    padding: 10px 0;
+    margin: 0 auto;
+    max-width: 800px; /* Max width for the timeline */
+}
+
+/* Timeline Item */
+.timeline-item {
+    position: relative;
+    padding: 20px;
+    margin-bottom: 30px; /* Increased margin for better spacing */
+    background: #fff; /* White background for each item */
+    border: 2px solid #ff8800; /* Border color to match the theme */
+    border-radius: 12px; /* Rounded corners for items */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Shadow for depth */
+    display: flex; /* Flexbox layout */
+    align-items: flex-start; /* Align items at the start */
+    transition: transform 0.3s, box-shadow 0.3s; /* Smooth transition for effects */
+}
+
+/* Hover Effect for Timeline Items */
+.timeline-item:hover {
+    transform: translateY(-10px); /* Slight lift on hover */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Enhanced shadow on hover */
+}
+
+/* Timeline Dot */
+.timeline-dot {
+    display: none; /* Hide the dot */
+}
+
+/* Timeline Content */
+.timeline-content {
+    padding-left: 40px; /* Increased padding for better alignment */
+    flex: 1; /* Flex-grow to fill available space */
+}
+
+/* Timeline Heading */
+.timeline-content h3 {
+    font-size: 24px; /* Larger font size for education titles */
+    color: #333; /* Dark color for text */
+    margin: 0; /* Remove default margin */
+    display: flex; /* Flexbox layout */
+    justify-content: space-between; /* Space between title and date */
+    align-items: center; /* Vertical alignment */
+    border-bottom: 2px solid #ff8800; /* Bottom border for separation */
+    padding-bottom: 10px; /* Padding below the heading */
+}
+
+/* Title and Date Range */
+.timeline-title {
+    flex: 1; /* Fill available space */
+}
+
+.timeline-date-range {
+    font-size: 18px; /* Font size for dates */
+    color: #666; /* Color for dates */
+    margin-left: 20px; /* Space between title and date */
+}
+
+/* Timeline Description */
+.timeline-description {
+    font-size: 16px; /* Font size for descriptions */
+    color: #444; /* Color for text */
+    line-height: 1.6; /* Line height for readability */
+    margin-top: 10px; /* Space above descriptions */
+}
+
+/* Timeline Description List */
+.timeline-description-list {
+    padding-left: 0; /* Remove padding for list */
+    margin-top: 10px; /* Space above list */
+    font-size: 16px; /* Font size for list items */
+    color: #444; /* Color for text */
+    list-style-type: none; /* Remove default list styling */
+}
+
+.timeline-description-list li {
+    margin-bottom: 8px; /* Space between list items */
+    position: relative; /* Relative positioning for custom bullets */
+}
+
+/* Custom Bullet Points for List */
+.timeline-description-list li::before {
+    content: "▸"; /* Custom bullet symbol */
+    font-size: 18px; /* Size of the bullet */
+    color: #ff8800; /* Color of the bullet */
+    position: absolute; /* Absolute positioning */
+    left: -24px; /* Position the bullet to the left */
+    top: 50%; /* Center the bullet vertically */
+    transform: translateY(-50%); /* Adjust vertical centering */
+}
+/* INI UNTUK EDUCATION END */
+
+
+/* INI UNTUK SKILLS */
+#skills {
+    background-color: #f2f2f2; /* Background color for the section */
+    padding: 60px 20px; /* Padding around the section */
+    border-radius: 10px; /* Rounded corners for the section */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Light shadow for depth */
+    margin: 40px auto; /* Center the section with margin */
+    max-width: 1200px; /* Max width for better readability */
+    position: relative; /* Position relative for pseudo-elements */
+}
+
+#skills h2 {
+    font-size: 36px; /* Larger font size for the section title */
+    color: #ff8800; /* Highlight color for the section title */
+    margin-bottom: 40px; /* Space below the title */
+    text-align: center; /* Center align the title */
+    position: relative; /* Position relative for pseudo-elements */
+}
+
+/* Optional: Adding a decorative underline */
+#skills h2::after {
+    content: "";
+    display: block;
+    width: 80px; /* Width of the underline */
+    height: 4px; /* Thickness of the underline */
+    background-color: #ff8800; /* Color of the underline */
+    margin: 20px auto 0; /* Center the underline and add space above */
+    border-radius: 2px; /* Rounded corners for the underline */
+}
+
+/* Skills Content */
+.skills-content {
+    display: flex; /* Flexbox layout */
+    gap: 150px; /* Space between categories */
+    flex-wrap: wrap; /* Wrap content if needed */
+}
+
+/* Skills Category */
+.skills-category {
+    flex: 1; /* Flex-grow to fill available space */
+    max-width: 500px; /* Max width for the category */
+    background-color: #fff; /* Background color for each category */
+    border-radius: 8px; /* Rounded corners for category boxes */
+    padding: 20px; /* Padding inside the category boxes */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Shadow for depth */
+}
+
+/* Category Title */
+.skills-category h3 {
+    font-size: 24px; /* Font size for category title */
+    color: #333; /* Dark color for the title */
+    margin-bottom: 20px; /* Space below the title */
+    border-bottom: 2px solid #ff8800; /* Bottom border for the title */
+    padding-bottom: 10px; /* Padding below the title text */
+}
+
+/* Skills List */
+.skills-list {
+    list-style: none; /* Remove default bullets */
+    padding: 0; /* Remove padding */
+    font-size: 16px; /* Font size for list items */
+    color: #444; /* Text color */
+}
+
+.skills-list li {
+    margin-bottom: 15px; /* Space between list items */
+    position: relative; /* Relative positioning for custom bullets */
+    padding-left: 30px; /* Space for custom bullet */
+}
+
+/* Custom Bullet Points */
+.skills-list li::before {
+    content: "●"; /* Custom bullet symbol */
+    font-size: 20px; /* Size of the bullet */
+    color: #ff8800; /* Color of the bullet */
+    position: absolute; /* Absolute positioning */
+    left: 0; /* Position bullet at the start of the list item */
+    top: 50%; /* Center the bullet vertically */
+    transform: translateY(-50%); /* Adjust for vertical centering */
+}
+
+/* Hover Effect */
+.skills-list li:hover {
+    background-color: #f9f9f9; /* Light background on hover */
+    border-radius: 4px; /* Slight rounding on hover */
+    padding-left: 35px; /* Adjust padding to make room for bullet */
+    transition: background-color 0.3s; /* Smooth transition for background color */
+}
+
+/* Optional: Adding a decorative border */
+#skills::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 10px;
+    background: linear-gradient(to right, #ff8800, #fff); /* Gradient border */
+    border-radius: 0 0 10px 10px; /* Rounded corners for the border */
+}
+
+/* INI UNTUK SKILLS END */
 
 .container-footer {
     background-color: #f1f1f1;
