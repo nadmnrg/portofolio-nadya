@@ -384,6 +384,227 @@ html {
 
 /* INI UNTUK SKILLS END */
 
+
+/* INI BAGIAN EXPERIENCE */
+#experience {
+    background-color: #f9f9f9; /* Background color similar to EDUCATION and SKILLS */
+    padding: 60px 20px; /* Padding around the section */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Light shadow for depth */
+    margin: 40px auto; /* Center the section */
+    max-width: 1200px; /* Max width for better readability */
+    position: relative; /* Position relative for pseudo-elements */
+}
+
+#experience h2 {
+    font-size: 36px; /* Larger font size for the section title */
+    color: #ff8800; /* Highlight color for the section title */
+    margin-bottom: 40px; /* Space below the title */
+    text-align: center; /* Center align the title */
+    position: relative; /* Position relative for pseudo-elements */
+}
+
+/* Optional: Adding a decorative underline */
+#experience h2::after {
+    content: "";
+    display: block;
+    width: 80px; /* Width of the underline */
+    height: 4px; /* Thickness of the underline */
+    background-color: #ff8800; /* Color of the underline */
+    margin: 20px auto 0; /* Center the underline and add space above */
+    border-radius: 2px; /* Rounded corners for the underline */
+}
+
+/* Timeline Container */
+.timeline {
+    position: relative;
+    padding: 10px 0;
+    margin: 0 auto;
+    max-width: 800px; /* Max width for the timeline */
+}
+
+/* Timeline Item */
+.timeline-item {
+    position: relative;
+    padding: 20px;
+    margin-bottom: 30px; /* Increased margin for better spacing */
+    background: #fff; /* White background for each item */
+    border: 2px solid #ff8800; /* Border color to match the theme */
+    border-radius: 12px; /* Rounded corners for items */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Shadow for depth */
+    display: flex; /* Flexbox layout */
+    align-items: flex-start; /* Align items at the start */
+    transition: transform 0.3s, box-shadow 0.3s; /* Smooth transition for effects */
+}
+
+/* Hover Effect for Timeline Items */
+.timeline-item:hover {
+    transform: translateY(-10px); /* Slight lift on hover */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Enhanced shadow on hover */
+}
+
+/* Timeline Dot */
+.timeline-dot {
+    display: none; /* Hide the dot */
+}
+
+/* Timeline Content */
+.timeline-content {
+    padding-left: 40px; /* Increased padding for better alignment */
+    flex: 1; /* Flex-grow to fill available space */
+}
+
+/* Timeline Heading */
+.timeline-content h3 {
+    font-size: 24px; /* Larger font size for experience titles */
+    color: #333; /* Dark color for text */
+    margin: 0; /* Remove default margin */
+    display: flex; /* Flexbox layout */
+    justify-content: space-between; /* Space between title and date */
+    align-items: center; /* Vertical alignment */
+    border-bottom: 2px solid #ff8800; /* Bottom border for separation */
+    padding-bottom: 10px; /* Padding below the heading */
+}
+
+/* Title and Date Range */
+.timeline-title {
+    flex: 1; /* Fill available space */
+}
+
+.timeline-date-range {
+    font-size: 18px; /* Font size for dates */
+    color: #666; /* Color for dates */
+    margin-left: 20px; /* Space between title and date */
+}
+
+/* Timeline Description */
+.timeline-description {
+    font-size: 16px; /* Font size for descriptions */
+    color: #444; /* Color for text */
+    line-height: 1.6; /* Line height for readability */
+    margin-top: 10px; /* Space above descriptions */
+}
+
+/* Timeline Description List */
+.timeline-description-list {
+    padding-left: 0; /* Remove padding for list */
+    margin-top: 10px; /* Space above list */
+    font-size: 16px; /* Font size for list items */
+    color: #444; /* Color for text */
+    list-style-type: none; /* Remove default list styling */
+}
+
+.timeline-description-list li {
+    margin-bottom: 8px; /* Space between list items */
+    position: relative; /* Relative positioning for custom bullets */
+}
+
+/* Custom Bullet Points for List */
+.timeline-description-list li::before {
+    content: "▸"; /* Custom bullet symbol */
+    font-size: 18px; /* Size of the bullet */
+    color: #ff8800; /* Color of the bullet */
+    position: absolute; /* Absolute positioning */
+    left: -24px; /* Position the bullet to the left */
+    top: 50%; /* Center the bullet vertically */
+    transform: translateY(-50%); /* Adjust vertical centering */
+}
+/* INI BAGIAN EXPERIENCE */
+
+
+/* INI UNTUK CONTACT */
+.contact-section {
+    background-color: #f9f9f9; /* Background color similar to EDUCATION and SKILLS */
+    padding: 60px 20px; /* Adjust padding for consistency */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Light shadow for depth */
+    margin: 40px auto; /* Center the section */
+    max-width: 1200px; /* Max width for better readability */
+    position: relative; /* Position relative for pseudo-elements */
+    text-align: center; /* Center align text */
+}
+
+/* Contact Section Title */
+.contact-section h2 {
+    font-size: 36px; /* Larger font size for the section title */
+    color: #ff8800; /* Highlight color for the section title */
+    margin-bottom: 40px; /* Space below the title */
+    position: relative; /* Position relative for pseudo-elements */
+}
+
+/* Optional: Adding a decorative underline */
+.contact-section h2::after {
+    content: "";
+    display: block;
+    width: 80px; /* Width of the underline */
+    height: 4px; /* Thickness of the underline */
+    background-color: #ff8800; /* Color of the underline */
+    margin: 20px auto 0; /* Center the underline and add space above */
+    border-radius: 2px; /* Rounded corners for the underline */
+}
+
+/* Contact Info Container */
+.contact-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px; /* Space between contact items */
+}
+
+/* Contact Item */
+.contact-item {
+    display: flex;
+    align-items: center;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Consistent shadow */
+    padding: 20px;
+    width: 80%; /* Width for responsiveness */
+    max-width: 600px; /* Max width for better readability */
+    margin: 0 auto; /* Center align items */
+    text-align: left; /* Align text to the left */
+    gap: 15px; /* Space between icon and text */
+}
+
+/* Icon Styling */
+.contact-item i {
+    font-size: 40px; /* Icon size */
+    color: #ff8800; /* Icon color */
+}
+
+.contact-details h3 {
+    margin: 0;
+    font-size: 20px; /* Font size for the header */
+    color: #333; /* Header color */
+}
+
+.contact-details p {
+    margin: 5px 0 0;
+    font-size: 18px; /* Font size for the details */
+    color: #666; /* Color for the details */
+}
+
+.contact-details a {
+    color: #ff8800; /* Color for links */
+    text-decoration: none; /* Remove underline */
+}
+
+.contact-details a:hover {
+    text-decoration: underline; /* Underline on hover */
+}
+
+.contact-item i {
+    font-size: 40px; /* Icon size */
+    color: #ff8800; /* Icon color */
+}
+
+/* Menggunakan Font Awesome untuk ikon */
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css');
+
+/* INI UNTUK CONTACT END */
+
+
+/* INI BAGIAN FOOTER */
 .container-footer {
     background-color: #f1f1f1;
     padding: 20px;
@@ -396,6 +617,7 @@ html {
     color: #888ea5;
     margin: 0;
 }
+/* INI BAGIAN FOOTER END */
 
 html {
     scroll-behavior: smooth;
