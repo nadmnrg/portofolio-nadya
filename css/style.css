@@ -27,6 +27,14 @@ html {
     display: flex;
     flex-direction: column; /* Mengatur logo dan teks dalam kolom */
     align-items: center; /* Mengatur logo dan teks agar berada di tengah */
+    text-decoration: none; /* Menghilangkan garis bawah dari tautan */
+    color: inherit; /* Warna teks warisan dari elemen parent */
+}
+
+.navbar-logo:hover .logo-text,
+.navbar-logo:hover .logo-img {
+    /* Opsional: Menambahkan efek hover jika diinginkan */
+    opacity: 0.8;
 }
 
 .logo-img {
@@ -89,19 +97,19 @@ html {
     border-radius: 10px; /* Tambahkan border-radius untuk sudut yang lebih lembut */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Tambahkan bayangan untuk meningkatkan keterbacaan */
     width: 30%; /* Atur lebar kotak teks sesuai kebutuhan */
-    height: 25%;
+    height: 30%;
     max-width: none; /* Pastikan tidak ada batasan lebar maksimum */
     box-sizing: border-box;
 }
 
 .overlay-text h1 {
     font-size: 36px; /* Ukuran font yang lebih besar untuk judul utama */
-    margin: 0 0 30px; /* Spasi bawah untuk jarak antara judul dan subjudul */
+    margin: 0 0 50px; /* Spasi bawah untuk jarak antara judul dan subjudul */
 }
 
 .overlay-text h2 {
     font-size: 24px;
-    margin: 0 0 40px; /* Spasi bawah untuk jarak antara subjudul dan subjudul selanjutnya */
+    margin: 0 0 70px; /* Spasi bawah untuk jarak antara subjudul dan subjudul selanjutnya */
 }
 
 .overlay-text h3 {
