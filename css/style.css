@@ -9,6 +9,10 @@ html {
     width: 100%;
 }
 
+body {
+    font-family: 'Roboto', sans-serif; /* Mengatur font untuk seluruh body */
+}
+
 .container-navbar {
     background-color: #e7e7e7;
     width: 100%;
@@ -70,7 +74,15 @@ html {
 .li-navbar a {
     text-decoration: none;
     color: #333;
-    font-size: 16px;
+    font-size: 18px; /* Ukuran font lebih besar untuk tampilan yang lebih menarik */
+    font-weight: 500; /* Menambah ketebalan font untuk memberikan lebih banyak kekuatan */
+    letter-spacing: 0.5px; /* Jarak antar huruf untuk meningkatkan keterbacaan */
+    transition: color 0.3s ease, transform 0.3s ease; /* Transisi untuk efek hover */
+}
+
+.li-navbar a:hover {
+    color: #ff8800; /* Warna saat hover */
+    transform: scale(1.1); /* Efek pembesaran saat hover */
 }
 
 .content-header {
@@ -513,7 +525,103 @@ html {
 
 
 /* INI BAGIAN PROJECT */
+#portfolio {
+    background-color: #f9f9f9; /* Background color similar to EDUCATION and EXPERIENCE */
+    padding: 60px 20px; /* Padding around the section */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Light shadow for depth */
+    margin: 40px auto; /* Center the section */
+    max-width: 1200px; /* Max width for better readability */
+    position: relative; /* Position relative for pseudo-elements */
+}
 
+#portfolio h2 {
+    font-size: 36px; /* Larger font size for the section title */
+    color: #ff8800; /* Highlight color for the section title */
+    margin-bottom: 40px; /* Space below the title */
+    text-align: center; /* Center align the title */
+    position: relative; /* Position relative for pseudo-elements */
+}
+
+/* Optional: Adding a decorative underline */
+#portfolio h2::after {
+    content: "";
+    display: block;
+    width: 80px; /* Width of the underline */
+    height: 4px; /* Thickness of the underline */
+    background-color: #ff8800; /* Color of the underline */
+    margin: 20px auto 0; /* Center the underline and add space above */
+    border-radius: 2px; /* Rounded corners for the underline */
+}
+
+/* Tambahkan font dari Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+/* Update gaya untuk elemen <p> */
+#portfolio p {
+    font-family: 'Roboto', sans-serif; /* Mengatur font type */
+    font-size: 18px; /* Ukuran font yang sesuai */
+    color: #333; /* Warna font yang sesuai */
+    text-align: center; /* Menempatkan teks di bagian tengah */
+    margin: 0 auto 30px; /* Menambahkan margin bawah */
+    max-width: 800px; /* Mengatur lebar maksimum agar teks tidak terlalu lebar */
+}
+
+/* Project Images Container */
+.project-images-container {
+    display: flex; /* Flexbox layout */
+    flex-wrap: wrap; /* Wrap content if needed */
+    justify-content: center; /* Center align items horizontally */
+    gap: 40px; /* Space between project images */
+}
+
+/* Individual Project Image */
+.project-image {
+    background-color: #fff; /* Background color for each image container */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Light shadow for depth */
+    overflow: hidden; /* Ensure image fits within rounded corners */
+    position: relative;
+    width: 400px; /* Adjusted width for better proportion */
+    height: 250px; /* Adjusted height to maintain aspect ratio */
+    display: flex;
+    flex-direction: column; /* Align title above the image */
+    align-items: center; /* Center align items horizontally */
+    justify-content: center; /* Center align items vertically */
+}
+
+/* Title Above Image */
+.project-title {
+    font-size: 20px; /* Font size for the title */
+    color: #333; /* Color for the title text */
+    margin-bottom: 10px; /* Space between title and image */
+    text-align: center; /* Center align the title text */
+    font-weight: bold; /* Make title bold */
+}
+
+/* Image Styles */
+.project-image img {
+    display: block;
+    width: 100%; /* Fill the width of the container */
+    height: auto; /* Maintain aspect ratio */
+    object-fit: cover; /* Crop and cover the container while maintaining aspect ratio */
+}
+
+/* Icon Style */
+.project-link-icon {
+    position: absolute; /* Position it absolutely within the project-image container */
+    top: 10px; /* Position from the top */
+    right: 10px; /* Position from the right */
+}
+
+.project-link-icon a {
+    text-decoration: none; /* Remove underline from the link */
+}
+
+.project-link-icon img {
+    width: 24px; /* Size of the icon */
+    height: auto; /* Maintain aspect ratio */
+}
 /* INI BAGIAN PROJECT END */
 
 /* INI UNTUK CONTACT */
